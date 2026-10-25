@@ -149,23 +149,11 @@
             }
         }
 
-        let highest = 0.0;
-        let avg = 0.0;
+        var highest = 0.0;
+        var total = 0;
         points.forEach(function(value, key, map) {
-            console.log(value);
             highest = Math.max(highest, value);
-            avg += value;
-        })
-        avg /= 6.0;
-        console.log(highest);
-        console.log(avg);
-
-        let total = 0;
-        points.forEach(function(value, key, map) {
-            let val2 = (value - avg) / (highest - avg);
-            val2 = Math.max(val2, 0.0);
-            total += val2;
-            map.set(key, val2);
+            total += value;
         })
 
         let sum = [0, 0];
@@ -197,7 +185,6 @@
         chart.getElementById(ideology).setAttribute("visibility", "visible");
 
         const filePath = "/blurb/" + ideology + ".txt";
-        console.log(filePath);
         var headerText = null;
         var bodyText = null;
 
