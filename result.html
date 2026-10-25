@@ -1,81 +1,98 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <h1>Results</h1>
-        <div style="display:flexbox">
-            <svg id="chart" height="400" width="400" xmlns="http://www.w3.org/2000/svg">
-                <g id="base">
-                    <polygon points="373,300 373,100 200,200" style="fill:#fffdb0;stroke:black;stroke-width:2" />
+        <main>
+            <h1>Results</h1>
+            <hr>
+            <div class="row">
+                <svg id="chart" style="width:420px; height:360px;" viewBox="0 0 472 472" xmlns="http://www.w3.org/2000/svg">
+                    <g id="main" transform="translate(36, 36)">
+                        <text transform="translate(200, 200) rotate(0) translate(0, -210)" text-anchor="middle">Esotericism</text>
+                        <text transform="translate(200, 200) rotate(60) translate(0, -210)" text-anchor="middle">Conservatism</text>
+                        <text transform="translate(200, 200) rotate(300) translate(0, 220)" text-anchor="middle">Liberalism</text>
+                        <text transform="translate(200, 200) rotate(0) translate(0, 220)" text-anchor="middle">Georgism</text>
+                        <text transform="translate(200, 200) rotate(60) translate(0, 220)" text-anchor="middle">Marxism</text>
+                        <text transform="translate(200, 200) rotate(300) translate(0, -210)" text-anchor="middle">Anarchism</text>
+                        <g id="base">
+                            <polygon points="373,300 373,100 200,200" style="fill:#fffdb0;stroke:black;stroke-width:2" />
 
-                    <polygon points="200,0 373,100 200,200" style="fill:#a2c9ff;stroke:black;stroke-width:2" />
+                            <polygon points="200,0 373,100 200,200" style="fill:#a2c9ff;stroke:black;stroke-width:2" />
 
-                    <polygon points="200,0 27,100 200,200" style="fill:#ffc2ac;stroke:black;stroke-width:2" />
+                            <polygon points="200,0 27,100 200,200" style="fill:#ffc2ac;stroke:black;stroke-width:2" />
 
-                    <polygon points="27,300 27,100 200,200" style="fill:#ffb2ab;stroke:black;stroke-width:2" />
-
-
-                    <polygon points="200,400 373,300 200,200" style="fill:#caeba5;stroke:black;stroke-width:2" />
-
-                    <polygon points="200,400 27,300 200,200" style="fill:#ffb3cd;stroke:black;stroke-width:2" />
+                            <polygon points="27,300 27,100 200,200" style="fill:#ffb2ab;stroke:black;stroke-width:2" />
 
 
+                            <polygon points="200,400 373,300 200,200" style="fill:#caeba5;stroke:black;stroke-width:2" />
 
-                    <polygon points="200,400 373,300 373,100  200,0 27,100 27,300" style="fill:none;stroke:black;stroke-width:4" />
-
-
-
-                    <polygon points="373,300 200,0 27,300" style="fill:none;stroke:black;stroke-width:3" />
-                </g>
-                <!-- ANARCHIST CORNER -->
-                <g id="ideologies">
-                    <polygon visibility="hidden" id="anprim" points="113.5,50 27,100 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
-                    <polygon visibility="hidden" id="posadism" points="113.5,50 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
-                    <polygon visibility="hidden" id="hoppeanism" points="113.5,50 113,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
-                    <polygon visibility="hidden" id="ancom" points="27,300 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon points="200,400 27,300 200,200" style="fill:#ffb3cd;stroke:black;stroke-width:2" />
 
 
 
-                    <!-- CONSERVATIVE CORNER -->
-
-                    <polygon visibility="hidden" id="monarchism" points="286.5,50 373,100 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
-                    <polygon visibility="hidden" id="neocon" points="286.5,50 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
-                    <polygon visibility="hidden" id="falangism" points="286.5,50 286.5,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
-                    <polygon visibility="hidden" id="libertarian" points="373,300 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon points="200,400 373,300 373,100  200,0 27,100 27,300" style="fill:none;stroke:black;stroke-width:4" />
 
 
-                    <!-- GREEN CORNER -->
-                    <polygon visibility="hidden" id="syndicalism" points="27,300 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="demsoc" points="286.5,350 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="socdem" points="286.5,350 200,300 373,300" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="georgism" points="286.5,350 200,400 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
 
-                    <!-- INNER TRIANGLE ENDS -->
-                    <polygon visibility="hidden" id="leninism" points="27,300 85,200 142,300" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="cliberal" points="373,300 315,200 258,300" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="nazism" points="142,100 200,0 258,100" style="fill:none;stroke:yellow;stroke-width:5"/>
-
-                    <!-- INNER TRIANGLE INSCRIBED HEXAGON -->
-
-                    <polygon visibility="hidden" id="titoism" points="85,200 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="maoism" points="85,200 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="longism" points="258,100 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon points="373,300 200,0 27,300" style="fill:none;stroke:black;stroke-width:3" />
+                        </g>
+                        <!-- ANARCHIST CORNER -->
+                        <g id="ideologies">
+                            <polygon visibility="hidden" id="anprim" points="113.5,50 27,100 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon visibility="hidden" id="posadism" points="113.5,50 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon visibility="hidden" id="hoppeanism" points="113.5,50 113,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon visibility="hidden" id="ancom" points="27,300 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
 
 
-                    <polygon visibility="hidden" id="paleocon" points="258,100 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
 
-                    <polygon visibility="hidden" id="neolib" points="258,300 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
-                    <polygon visibility="hidden" id="dengism" points="258,300 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
-                </g>
-                <circle id="dot" r="8" cx="200" cy="200" style="fill:red;stroke:white;stroke-width:3"></circle>
+                            <!-- CONSERVATIVE CORNER -->
 
-            </svg>
-            
-            <div>
-                <p>Closest Match:</p>
-                <h2 id="matchHeader">Placeholder</h2>
+                            <polygon visibility="hidden" id="monarchism" points="286.5,50 373,100 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon visibility="hidden" id="neocon" points="286.5,50 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon visibility="hidden" id="falangism" points="286.5,50 286.5,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
+                            <polygon visibility="hidden" id="libertarian" points="373,300 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
 
+
+                            <!-- GREEN CORNER -->
+                            <polygon visibility="hidden" id="syndicalism" points="27,300 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="demsoc" points="286.5,350 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="socdem" points="286.5,350 200,300 373,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="georgism" points="286.5,350 200,400 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+                            <!-- INNER TRIANGLE ENDS -->
+                            <polygon visibility="hidden" id="leninism" points="27,300 85,200 142,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="cliberal" points="373,300 315,200 258,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="nazism" points="142,100 200,0 258,100" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+                            <!-- INNER TRIANGLE INSCRIBED HEXAGON -->
+
+                            <polygon visibility="hidden" id="titoism" points="85,200 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="maoism" points="85,200 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="longism" points="258,100 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+
+                            <polygon visibility="hidden" id="paleocon" points="258,100 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+                            <polygon visibility="hidden" id="neolib" points="258,300 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                            <polygon visibility="hidden" id="dengism" points="258,300 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                        </g>
+                        <circle id="dot" r="8" cx="200" cy="200" style="fill:red;stroke:white;stroke-width:3"></circle>
+                    </g>
+                </svg>
+                <div>
+                    <p>Closest Match:</p>
+                    <h2 id="matchHeader">Placeholder</h2>
+                </div>
             </div>
-        </div>
+                
+            <p id="matchBody">Body text goes here</p>
 
+            <hr>
+            <p>This concludes my political test. Please don't take this too seriously as I did no research and basically did everything off the top of my head. Anyway, please share with your friends!</p>
+            
+            <a href="home.html">Return Home</a>
+        </main>
     </body>
     <script>
         const chart = document.getElementById("chart");
@@ -160,6 +177,8 @@
             sum[1] += loc[1] * portion;
         })
 
+        sum = [200 + (sum[0] - 200) * 0.98, 200 + (sum[1] - 200) * 0.98];
+
         const dot = chart.getElementById("dot");
         dot.setAttribute("cx", sum[0]);
         dot.setAttribute("cy", sum[1]);
@@ -175,7 +194,23 @@
                 }
             }
         })
+        chart.getElementById(ideology).setAttribute("visibility", "visible");
 
+        const filePath = "/blurb/" + ideology + ".txt";
+        console.log(filePath);
+        var headerText = null;
+        var bodyText = null;
+
+        fetch(filePath)
+            .then(r=>r.text())
+            .then(text => {
+                let stuff = text.split("\n");
+                headerText = stuff[0];
+                bodyText = stuff[1];
+                
+                document.getElementById("matchHeader").innerHTML = headerText;
+                document.getElementById("matchBody").innerHTML = bodyText;
+            })
         
     </script>
 </html>

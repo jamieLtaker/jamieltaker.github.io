@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+    align-items: center;
+}
+main {
+    display:flexbox;
+    width:100vw; 
+    max-width: 640px;
+    background-color:white;
+    padding: 0px 24px 0px 24px;
+}
+body {
+    justify-content: center;
+    display:flex;
+    background-color: lightgrey;
+}
+h1 {
+    text-align:center;
+}
