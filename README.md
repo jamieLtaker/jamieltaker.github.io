@@ -1,2 +1,2 @@
 # jamieltaker.github.io
-website
+This is my github website where i do stuff like \[ Hateful content expunged \]
