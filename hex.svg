@@ -1,0 +1,71 @@
+<svg id="chart" height="400" width="400" xmlns="http://www.w3.org/2000/svg">
+
+<polygon points="373,300 373,100 200,200" style="fill:#fffdb0;stroke:black;stroke-width:2" />
+
+<polygon points="200,0 373,100 200,200" style="fill:#a2c9ff;stroke:black;stroke-width:2" />
+
+<polygon points="200,0 27,100 200,200" style="fill:#ffc2ac;stroke:black;stroke-width:2" />
+
+<polygon points="27,300 27,100 200,200" style="fill:#ffb2ab;stroke:black;stroke-width:2" />
+
+
+<polygon points="200,400 373,300 200,200" style="fill:#caeba5;stroke:black;stroke-width:2" />
+
+<polygon points="200,400 27,300 200,200" style="fill:#ffb3cd;stroke:black;stroke-width:2" />
+
+
+
+<polygon points="200,400 373,300 373,100  200,0 27,100 27,300" style="fill:none;stroke:black;stroke-width:4" />
+
+
+
+<polygon points="373,300 200,0 27,300" style="fill:none;stroke:black;stroke-width:3" />
+
+<!-- ANARCHIST CORNER -->
+
+<polygon visibility="hidden" id="anprim" points="113.5,50 27,100 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+<polygon visibility="hidden" id="posadism" points="113.5,50 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+<polygon visibility="hidden" id="hoppeanism" points="113.5,50 113,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
+<polygon visibility="hidden" id="ancom" points="27,300 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+
+
+
+<!-- CONSERVATIVE CORNER -->
+
+<polygon visibility="hidden" id="monarchism" points="286.5,50 373,100 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+<polygon visibility="hidden" id="neocon" points="286.5,50 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+<polygon visibility="hidden" id="falangism" points="286.5,50 286.5,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
+<polygon visibility="hidden" id="libertarian" points="373,300 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+
+
+<!-- GREEN CORNER -->
+<polygon visibility="hidden" id="syndicalism" points="27,300 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="demsoc" points="286.5,350 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="socdem" points="286.5,350 200,300 373,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="georgism" points="286.5,350 200,400 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+<!-- INNER TRIANGLE ENDS -->
+<polygon visibility="hidden" id="leninism" points="27,300 85,200 142,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="cliberal" points="373,300 315,200 258,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="nazism" points="142,100 200,0 258,100" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+<!-- INNER TRIANGLE INSCRIBED HEXAGON -->
+
+<polygon visibility="hidden" id="strasserism" points="85,200 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="maoism" points="85,200 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="longism" points="258,100 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+
+<polygon visibility="hidden" id="paleocon" points="258,100 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+<polygon visibility="hidden" id="neolib" points="258,300 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+<polygon visibility="hidden" id="dengism" points="258,300 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+<circle r="8" cx="200" cy="200" style="fill:red;stroke:white;stroke-width:3"></circle>
+
+</svg>
+
+<script>
+alert("hi");
+const chart = getElementById("chart");
+</script>
