@@ -1,73 +1,80 @@
 <html>
     <body>
-        <svg id="chart" height="400" width="400" xmlns="http://www.w3.org/2000/svg">
+        <h1>Results</h1>
+        <div style="display:flexbox">
+            <svg id="chart" height="400" width="400" xmlns="http://www.w3.org/2000/svg">
+                <g id="base">
+                    <polygon points="373,300 373,100 200,200" style="fill:#fffdb0;stroke:black;stroke-width:2" />
 
-            <polygon points="373,300 373,100 200,200" style="fill:#fffdb0;stroke:black;stroke-width:2" />
+                    <polygon points="200,0 373,100 200,200" style="fill:#a2c9ff;stroke:black;stroke-width:2" />
 
-            <polygon points="200,0 373,100 200,200" style="fill:#a2c9ff;stroke:black;stroke-width:2" />
+                    <polygon points="200,0 27,100 200,200" style="fill:#ffc2ac;stroke:black;stroke-width:2" />
 
-            <polygon points="200,0 27,100 200,200" style="fill:#ffc2ac;stroke:black;stroke-width:2" />
-
-            <polygon points="27,300 27,100 200,200" style="fill:#ffb2ab;stroke:black;stroke-width:2" />
-
-
-            <polygon points="200,400 373,300 200,200" style="fill:#caeba5;stroke:black;stroke-width:2" />
-
-            <polygon points="200,400 27,300 200,200" style="fill:#ffb3cd;stroke:black;stroke-width:2" />
+                    <polygon points="27,300 27,100 200,200" style="fill:#ffb2ab;stroke:black;stroke-width:2" />
 
 
+                    <polygon points="200,400 373,300 200,200" style="fill:#caeba5;stroke:black;stroke-width:2" />
 
-            <polygon points="200,400 373,300 373,100  200,0 27,100 27,300" style="fill:none;stroke:black;stroke-width:4" />
+                    <polygon points="200,400 27,300 200,200" style="fill:#ffb3cd;stroke:black;stroke-width:2" />
 
 
 
-            <polygon points="373,300 200,0 27,300" style="fill:none;stroke:black;stroke-width:3" />
-
-            <!-- ANARCHIST CORNER -->
-
-            <polygon visibility="hidden" id="anprim" points="113.5,50 27,100 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
-            <polygon visibility="hidden" id="posadism" points="113.5,50 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
-            <polygon visibility="hidden" id="hoppeanism" points="113.5,50 113,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
-            <polygon visibility="hidden" id="ancom" points="27,300 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                    <polygon points="200,400 373,300 373,100  200,0 27,100 27,300" style="fill:none;stroke:black;stroke-width:4" />
 
 
 
-            <!-- CONSERVATIVE CORNER -->
-
-            <polygon visibility="hidden" id="monarchism" points="286.5,50 373,100 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
-            <polygon visibility="hidden" id="neocon" points="286.5,50 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
-            <polygon visibility="hidden" id="falangism" points="286.5,50 286.5,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
-            <polygon visibility="hidden" id="libertarian" points="373,300 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
-
-
-            <!-- GREEN CORNER -->
-            <polygon visibility="hidden" id="syndicalism" points="27,300 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="demsoc" points="286.5,350 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="socdem" points="286.5,350 200,300 373,300" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="georgism" points="286.5,350 200,400 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
-
-            <!-- INNER TRIANGLE ENDS -->
-            <polygon visibility="hidden" id="leninism" points="27,300 85,200 142,300" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="cliberal" points="373,300 315,200 258,300" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="nazism" points="142,100 200,0 258,100" style="fill:none;stroke:yellow;stroke-width:5"/>
-
-            <!-- INNER TRIANGLE INSCRIBED HEXAGON -->
-
-            <polygon visibility="hidden" id="strasserism" points="85,200 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="maoism" points="85,200 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="longism" points="258,100 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon points="373,300 200,0 27,300" style="fill:none;stroke:black;stroke-width:3" />
+                </g>
+                <!-- ANARCHIST CORNER -->
+                <g id="ideologies">
+                    <polygon visibility="hidden" id="anprim" points="113.5,50 27,100 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                    <polygon visibility="hidden" id="posadism" points="113.5,50 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                    <polygon visibility="hidden" id="hoppeanism" points="113.5,50 113,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
+                    <polygon visibility="hidden" id="ancom" points="27,300 113,150 27,200" style="fill:none;stroke:yellow;stroke-width:5" />
 
 
-            <polygon visibility="hidden" id="paleocon" points="258,100 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
 
-            <polygon visibility="hidden" id="neolib" points="258,300 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
-            <polygon visibility="hidden" id="dengism" points="258,300 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <!-- CONSERVATIVE CORNER -->
 
-            <circle id="dot" r="8" cx="200" cy="200" style="fill:red;stroke:white;stroke-width:3"></circle>
+                    <polygon visibility="hidden" id="monarchism" points="286.5,50 373,100 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                    <polygon visibility="hidden" id="neocon" points="286.5,50 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
+                    <polygon visibility="hidden" id="falangism" points="286.5,50 286.5,150 200,0" style="fill:none;stroke:yellow;stroke-width:5" />
+                    <polygon visibility="hidden" id="libertarian" points="373,300 286.5,150 373,200" style="fill:none;stroke:yellow;stroke-width:5" />
 
-        </svg>
-        
 
+                    <!-- GREEN CORNER -->
+                    <polygon visibility="hidden" id="syndicalism" points="27,300 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="demsoc" points="286.5,350 200,300 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="socdem" points="286.5,350 200,300 373,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="georgism" points="286.5,350 200,400 113.5,350" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+                    <!-- INNER TRIANGLE ENDS -->
+                    <polygon visibility="hidden" id="leninism" points="27,300 85,200 142,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="cliberal" points="373,300 315,200 258,300" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="nazism" points="142,100 200,0 258,100" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+                    <!-- INNER TRIANGLE INSCRIBED HEXAGON -->
+
+                    <polygon visibility="hidden" id="titoism" points="85,200 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="maoism" points="85,200 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="longism" points="258,100 142,100 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+
+                    <polygon visibility="hidden" id="paleocon" points="258,100 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+
+                    <polygon visibility="hidden" id="neolib" points="258,300 315,200 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                    <polygon visibility="hidden" id="dengism" points="258,300 142,300 200,200" style="fill:none;stroke:yellow;stroke-width:5"/>
+                </g>
+                <circle id="dot" r="8" cx="200" cy="200" style="fill:red;stroke:white;stroke-width:3"></circle>
+
+            </svg>
+            
+            <div>
+                <p>Closest Match:</p>
+                <h2 id="matchHeader">Placeholder</h2>
+
+            </div>
+        </div>
 
     </body>
     <script>
@@ -92,8 +99,25 @@
             ['nazi', [200, 0]]
 
         ])
+
+        function sign (p1, p2, p3) {
+            return (p1[0] - p3[0]) * (p2[1] - p3[1]) - (p2[0] - p3[0]) * (p1[1] - p3[1]);
+        }
+        function PointInTriangle (pt, v1, v2, v3) {
+            var d1, d2, d3;
+            var has_neg, has_pos;
+
+            d1 = sign(pt, v1, v2);
+            d2 = sign(pt, v2, v3);
+            d3 = sign(pt, v3, v1);
+
+            has_neg = (d1 < 0) || (d2 < 0) || (d3 < 0);
+            has_pos = (d1 > 0) || (d2 > 0) || (d3 > 0);
+
+            return !(has_neg && has_pos);
+        }
         
-        const sections = ['e'];
+        const sections = ['e', 'r'];
         for (j in sections) {
             let sectionLetter = sections[j];
             for (i = 0; i < 100; i++) {
@@ -108,33 +132,49 @@
             }
         }
 
-        let highest = 0;
-        let lowest = 9999;
+        let highest = 0.0;
+        let avg = 0.0;
+        points.forEach(function(value, key, map) {
+            console.log(value);
+            highest = Math.max(highest, value);
+            avg += value;
+        })
+        avg /= 6.0;
+        console.log(highest);
+        console.log(avg);
+
         let total = 0;
         points.forEach(function(value, key, map) {
-            highest = Math.max(highest, value);
-            lowest = Math.min(lowest, value);
-        })
-
-        points.forEach(function(value, key, map) {
-            total += value - lowest;
-            map.set(key, (value - lowest));
+            let val2 = (value - avg) / (highest - avg);
+            val2 = Math.max(val2, 0.0);
+            total += val2;
+            map.set(key, val2);
         })
 
         let sum = [0, 0];
 
-        console.log(points);
-        console.log(total);
         points.forEach(function(value, key, map) {
             let portion = value / total;
             let loc = pointLocations.get(key)
             sum[0] += loc[0] * portion;
             sum[1] += loc[1] * portion;
         })
-        console.log(sum);
+
         const dot = chart.getElementById("dot");
         dot.setAttribute("cx", sum[0]);
         dot.setAttribute("cy", sum[1]);
+
+        const ideaContainer = chart.getElementById("ideologies");
+        let ideology = null;
+        ideaContainer.childNodes.forEach(function(value, index, array) {
+            if (value.points) {
+                let pts = value.points;
+                let idk = PointInTriangle(sum, [pts[0].x, pts[0].y, pts[0].z], [pts[1].x, pts[1].y, pts[1].z], [pts[2].x, pts[2].y, pts[2].z]);
+                if (idk) {
+                    ideology = value.id;
+                }
+            }
+        })
 
         
     </script>
